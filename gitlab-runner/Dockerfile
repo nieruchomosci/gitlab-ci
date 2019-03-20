@@ -1,4 +1,4 @@
-FROM gitlab/gitlab-runner
+FROM ruby:2.1
 
 RUN apt-get update -y \
-    && apt-get install -y curl jq openssh-client git
+    && apt-get install -y curl jq ssh openssh-client git

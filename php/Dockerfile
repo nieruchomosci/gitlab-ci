@@ -4,6 +4,7 @@ RUN apt-get update \
     && apt-get install -y \
         librabbitmq-dev \
         libssh-dev \
+        libzip-dev \
     && docker-php-ext-install bcmath zip \
     && pecl install amqp \
     && docker-php-ext-enable amqp \

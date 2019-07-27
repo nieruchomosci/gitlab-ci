@@ -8,8 +8,11 @@ golang:
 php:
 	docker build -t nninja/gitlab-php ./php
 
+docker:
+	docker build -t nninja/gitlab-docker ./docker
+
 gitlab-runner:
 	docker build -t nninja/gitlab-runner ./gitlab-runner
 
 .PHONY: all
-all: golang gitlab-runner
+all: golang gitlab-runner php docker

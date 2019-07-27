@@ -1,6 +1,6 @@
 .DEFAULT: all
 
-.PHONY: all golang gitlab-runner php
+.PHONY: all golang gitlab-runner php docker
 
 golang:
 	docker build -t nninja/gitlab-golang ./golang
